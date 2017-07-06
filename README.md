@@ -26,3 +26,12 @@ docker inspect <task or container>                   # Inspect task or container
 docker container ls -q                                      # List container IDs
 docker stack rm <appname>                             # Tear down an application
 ```
+
+```
+docker-machine create --driver vmwarefusion myvm1
+docker-machine create --driver virtualbox myvm2
+docker-machine status
+docker-machine restart myvm1 myvm2
+docker-machine ssh myvm1 'docker swarm init'
+docker-machine ssh myvm2 'docker swarm join ...'
+```
