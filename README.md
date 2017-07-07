@@ -35,3 +35,7 @@ docker-machine restart myvm1 myvm2
 docker-machine ssh myvm1 'docker swarm init'
 docker-machine ssh myvm2 'docker swarm join ...'
 ```
+
+``` 
+docker-machine scp docker-compose.yml myvm1:~
+```
