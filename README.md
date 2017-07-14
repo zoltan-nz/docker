@@ -39,3 +39,8 @@ docker-machine ssh myvm2 'docker swarm join ...'
 ``` 
 docker-machine scp docker-compose.yml myvm1:~
 ```
+
+```
+docker container cp
+
+```
