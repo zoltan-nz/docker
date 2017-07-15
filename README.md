@@ -40,7 +40,14 @@ docker-machine ssh myvm2 'docker swarm join ...'
 docker-machine scp docker-compose.yml myvm1:~
 ```
 
+Copy:
+
 ```
 docker container cp
+```
 
+Using volume:
+
+```
+docker run -d -p 80:80 -v /myfiles:/usr/local/apache2/htdocs web-server:1.1
 ```
