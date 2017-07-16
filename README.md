@@ -51,3 +51,9 @@ Using volume:
 ```
 docker run -d -p 80:80 -v /myfiles:/usr/local/apache2/htdocs web-server:1.1
 ```
+
+Portainer:
+
+```
+docker run -d -p 9000:9000 -v "/var/run/docker.sock:/var/run/docker.sock" portainer/portainer
+```
